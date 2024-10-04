@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Ajit Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="skills">
+            <div class="container">
+                <h1 class="section-title">Skills & Languages</h1>
+                <p class="section-description">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor<br>Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit.<br>Lorem Ipsum</p>
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Skills will be dynamically added here -->
+                </div>
+                <a href="#" class="add-skill-btn" id="addSkillBtn">ADD SKILL</a>
+                
+                <!-- Logos section -->
+                <div class="logos-section">
+                    <div class="logo-item">
+                        <img src="assets/images/under-armour.jpg" alt="3gerate">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/spotify-black1673.jpg" alt="GL">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/mobile-legends-bang-bang9278.jpg" alt="Genrate">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/cat1868.jpg" alt="3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="addSkillModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Skill</h2>
+            <form id="addSkillForm">
+                <input type="text" id="domainInput" placeholder="Domain" required>
+                <input type="text" id="skillInput" placeholder="Skill" required>
+                <input type="number" id="proficiencyInput" placeholder="Proficiency (%)" min="1" max="100" required>
+                <button type="submit">ADD SKILL</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/logo.png" alt="Logo" style="height: 100px; margin-bottom: 1rem;">
+                    <p>&copy; 2024 Copyright, All Right Reserved</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#recommendations">Recommendations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#frontend">Frontend Development</a></li>
+                        <li><a href="#backend">Backend Development</a></li>
+                        <li><a href="#webdesign">Website Design</a></li>
+                        <li><a href="#machinelearning">Machine Learning</a></li>
+                        <li><a href="#dsa">Problem Solving & DSA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/skills.js"></script>
+</body>
+</html>
